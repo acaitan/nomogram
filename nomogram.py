@@ -20,6 +20,7 @@ def generate_df_rank(path, total_point=100):
     df = df.drop(index=["intercept", "threshold"])
     
     df = df.reset_index()
+
     
     df["sequence"] = list(range(0,df.shape[0]))
     
